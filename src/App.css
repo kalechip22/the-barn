@@ -86,3 +86,21 @@ p {
 .App-link {
   color: #61dafb;
 }
+
+#logout-btn {
+  display: flex;
+  margin-left: 1215px;
+  position: absolute;
+  margin-top: 40px;
+
+  background-color: #5C7E6C;
+  border-radius: 50px;
+  /* width: 150px;
+  height: 50px; */
+  color: white;
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: 0.08em; /* Use em units */
+  border: none;
+  padding: 15px;
+}

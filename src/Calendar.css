@@ -1,5 +1,5 @@
 .calendar {
-    height: 518px;
+    height: 500px;
     width: 700px;
     border-radius: 10px;
     background-color: #F3EEE9;
@@ -20,6 +20,10 @@
     border: 1px solid #DACCBE;
 } */
 
+html {
+    background-color: #ADB9AD;
+}
+
 .aggie-house-logo {
 position: absolute;
 top: 20px; 
@@ -28,36 +32,35 @@ width: 80px;
 height: 96px; 
 }
 
-.container {
-  display: flex;
-  height: 80vh;
-}
-
 /* App.css */
 
 .container {
     display: flex;
-    height: 80vh;
+    background-color: #ADB9AD;
   }
   
   .left-column,
   .right-column {
     flex: 1;
+    margin-top: 100px;
   }
   
   .left-column {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin-left: 100px;
   }
   
   .right-column {
     padding: 20px;
+    margin-right: 50px;
   }
   
   .announcement-form,
   .admin-message-form {
     margin-bottom: 20px;
+    width: 400px;
   }
   
   .announcement-form {
