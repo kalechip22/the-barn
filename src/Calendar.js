@@ -8,11 +8,14 @@ import TikLogo from './images/tik-logo.png'
 import "./Calendar.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import AggieHouseLogo from './images/AH-logo.png';
+import AnnouncementForm from './AnnouncementForm';
+import Message from './Message';
 
 
 const localizer = momentLocalizer(moment);
 
 class calendar extends Component {
+  
   state = {
     events: [
       {
@@ -46,6 +49,25 @@ class calendar extends Component {
           </a>
         </div>
 
+        <div className="container">
+      {/* Left column */}
+      <div className="left-column">
+        {/* Announcement form */}
+        <div className="announcement-form">
+        <AnnouncementForm />
+          {/* Your announcement form components */}
+        </div>
+
+        {/* Admin message form */}
+        <div className="admin-message-form">
+          <Message />
+          {/* Your admin message form components */}
+        </div>
+      </div>
+
+      {/* Right column */}
+      <div className="right-column">
+        {/* Calendar */}
         <div className="calendar">
           <Calendar
             localizer={localizer}
@@ -54,6 +76,8 @@ class calendar extends Component {
             events={this.state.events}
           />
         </div>
+      </div>
+    </div>
       </div>
     );
   }

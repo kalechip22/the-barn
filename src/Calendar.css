@@ -1,6 +1,10 @@
 .calendar {
-    height: 500px;
+    height: 518px;
     width: 700px;
+    border-radius: 10px;
+    background-color: #F3EEE9;
+    padding: 20px;
+
 }
 
 .rbc-calendar {
@@ -10,7 +14,8 @@
 /* .rbc-month-row,
 .rbc-month-col,
 .rbc-month-view,
-.rbc-header
+.rbc-header,
+.rbc-day-bg
  {
     border: 1px solid #DACCBE;
 } */
@@ -22,3 +27,49 @@ left: 80px;
 width: 80px;
 height: 96px; 
 }
+
+.container {
+  display: flex;
+  height: 80vh;
+}
+
+/* App.css */
+
+.container {
+    display: flex;
+    height: 80vh;
+  }
+  
+  .left-column,
+  .right-column {
+    flex: 1;
+  }
+  
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .right-column {
+    padding: 20px;
+  }
+  
+  .announcement-form,
+  .admin-message-form {
+    margin-bottom: 20px;
+  }
+  
+  .announcement-form {
+    border-radius: 10px;
+    background-color: #F3EEE9;
+    padding: 20px;
+  }
+  
+  .admin-message-form{
+    border-radius: 10px;
+    background-color: #F3EEE9;
+    padding: 20px;
+  }
+  /* Add additional styling for your forms */
+  
