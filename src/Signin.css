@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 100px;
+  letter-spacing: 0.03em; /* Use em units */
+
+}
+
+#sign-up-box {
+  border-radius: 50px;
+  /* border: 2px solid #000; Border width, style, and color */
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logos {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+}
+
+.FB-logo,
+.Instagram-logo,
+.Linked-logo,
+.Tik-logo {
+  margin-right: 20px; /* Add margin to the right of each logo */
+  height: 20px;
+}

@@ -1,0 +1,66 @@
+/* AnnouncementForm.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Form container */
+form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+#announce-title-txt {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #545454;
+}
+  /* Form title */
+  /* h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: black;
+  }
+   */
+  /* Form input fields */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #DACCBE;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  /* Form submit button */
+  button[type="submit"] {
+    /* background-color: #F3EEE9;*/
+    background-color: #DACCBE;
+    color: white;
+    border: 1px solid #DACCBE;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #DACCBE; /* Darker shade of blue on hover */
+  }
+
+.placeholder {
+  color: #7B7A7A;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+  
+#send-btn {
+  border: 1px solid #DACCBE;
+  stroke: 3px;
+  color: #7B7A7A;
+}
