@@ -1,22 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Signin from './Signin';
 
 function App() {
+  const [showSignin, setShowSignin] = useState(false);
+
+  const handleSigninClick = () => {
+    setShowSignin(true);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {!showSignin && (
+          <>
+          <img src="./images/AH-logo.png" className="aggie-house-logo" alt="AH logo" />
+
+            <p>
+              Be a part of the <br />Aggie House
+            </p>
+            <p>Volunteer and join the community to fight housing insecurity</p>
+            <button onClick={handleSigninClick}>Log In</button>
+          </>
+        )}
+
+        {showSignin && <Signin />}
       </header>
     </div>
   );
