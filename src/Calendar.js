@@ -66,9 +66,9 @@ class calendar extends Component {
           </a>
         </div>
 
-        <div className="container" style={{marginTop: "40px", marginLeft: "30px"}}>
+        <div className="container" style={{height: "100%", width: "100%", marginTop: "40px", marginLeft: "30px"}}>
       {/* Left column */}
-      <div className="left-column">
+      <div className="left-column" style={{height: "100%", width: "100%"}}>
         {/* Announcement form */}
         <div className="announcement-form">
         <AnnouncementForm />

@@ -72,12 +72,11 @@
 
 
 
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Calendar from './Calendar';
 // import { withAuthInfo, useRedirectFunctions, useLogoutFunction } from '@propelauth/react'
 
-import Signin from './Signin';
 import AggieHouseLogo from './images/AH-logo.png';
 import GroupImage from './images/group.png';
 import HouseTextImage from './images/house-txt.png';
@@ -96,7 +95,7 @@ import { withAuthInfo, useRedirectFunctions, useLogoutFunction } from '@propelau
     //         <div>
     //             <p>You are logged in as {props.user.email}</p>
     //             <button onClick={() => redirectToAccountPage()}>Account</button>
-    //             <button onClick={() => logoutFunction(true)}>Logout</button>
+                // <button onClick={() => logoutFunction(true)}>Logout</button>
     //         </div>
     //     )
     // } else {
@@ -114,7 +113,7 @@ import { withAuthInfo, useRedirectFunctions, useLogoutFunction } from '@propelau
 const App = withAuthInfo((props) => {
 // function App() {
     const logoutFunction = useLogoutFunction()
-    const { redirectToLoginPage, redirectToSignupPage, redirectToAccountPage } = useRedirectFunctions()
+    const { redirectToLoginPage} = useRedirectFunctions()
     // const [showSignin] = useState(false);
   
     // const handleSigninClick = () => {
@@ -122,7 +121,12 @@ const App = withAuthInfo((props) => {
     // };
     if (props.isLoggedIn) {
         return (
+          <div>
+            <button id="logout-btn" onClick={() => logoutFunction(true)}>Logout</button>
+
             <Calendar/>
+
+          </div>
             // <div>
             //     <p>You are logged in as {props.user.email}</p>
             //     <button onClick={() => redirectToAccountPage()}>Account</button>
@@ -149,7 +153,7 @@ const App = withAuthInfo((props) => {
               </div>
               
               <button id="login-btn" onClick={() => redirectToLoginPage()} >LOGIN</button>
-              <img src={GroupImage} className="group-image" alt="group image" />
+              <img src={GroupImage} className="group-image" alt="group" />
             </>
           )}
   
