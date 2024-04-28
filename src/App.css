@@ -1,15 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moon+Time&display=swap');
 
 p {
   font-family: 'Poppins', sans-serif; /* Apply Poppins font to the entire body */
 }
 
+#login-btn {
+  background-color: #5C7E6C;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-weight: 1000;
+  font-size: 20px;
+  letter-spacing: 0.08em; /* Use em units */
+  border: none;
+}
+
+#mission-txt {
+  color: #545454;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#part-txt {
+  font-weight: 1000;
+  font-size: 60px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+#aggie-house-txt {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#aggie-txt {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 110px;
+  height: 150px;
+  width: 250px;
+  margin-right: 100px;
+}
+
+#homepage-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.house-logo {
+  height: 140px;
+  width: 250px;
+}
 .aggie-house-logo {
   position: absolute;
   top: 20px; 
-  left: 20px; 
+  left: 80px;
+  width: 80px;
+  height: 96px; 
 }
 
+.group-image {
+  margin-top: 20px;
+}
 .App {
   text-align: center;
 }
