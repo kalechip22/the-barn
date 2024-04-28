@@ -21,10 +21,27 @@ class calendar extends Component {
       {
         start: moment().toDate(),
         end: moment().add(1, "days").toDate(),
-        title: "Emily"
-      }
+        title: "Eric's Shift"
+      },
+      {
+        start: moment().subtract(3, 'days').toDate(), // Subtracts 3 days from the current date
+        end: moment().subtract(2, 'days').toDate(),   // Subtracts 2 days from the current date (for example)
+        title: "Emily's Shift"
+      },
+      {
+        start: moment().subtract(10, 'days').toDate(), // Subtracts 3 days from the current date
+        end: moment().subtract(9, 'days').toDate(),   // Subtracts 2 days from the current date (for example)
+        title: "Jillian's Shift"
+      },
+      {
+        start: moment().subtract(20, 'days').toDate(), // Subtracts 3 days from the current date
+        end: moment().subtract(19, 'days').toDate(),   // Subtracts 2 days from the current date (for example)
+        title: "Kayla's Shift"
+      },
+      // Add more events as needed
     ]
   };
+  
 
   render() {
     return (
@@ -49,7 +66,7 @@ class calendar extends Component {
           </a>
         </div>
 
-        <div className="container">
+        <div className="container" style={{marginTop: "40px", marginLeft: "30px"}}>
       {/* Left column */}
       <div className="left-column">
         {/* Announcement form */}
