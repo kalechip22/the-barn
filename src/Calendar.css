@@ -1,14 +1,14 @@
 .calendar {
-    height: 518px;
-    width: 700px;
-    border-radius: 10px;
-    background-color: #F3EEE9;
-    padding: 20px;
+  height: 550px;
+  width: 700px;
+  border-radius: 10px;
+  background-color: #F3EEE9;
+  padding: 20px;
 
 }
 
 .rbc-calendar {
-    color: #545454;
+  color: #545454;
 }
 
 /* .rbc-month-row,
@@ -16,9 +16,13 @@
 .rbc-month-view,
 .rbc-header,
 .rbc-day-bg
- {
-    border: 1px solid #DACCBE;
+{
+  border: 1px solid #DACCBE;
 } */
+
+html {
+  background-color: #ADB9AD;
+}
 
 .aggie-house-logo {
 position: absolute;
@@ -28,48 +32,46 @@ width: 80px;
 height: 96px; 
 }
 
-.container {
-  display: flex;
-  height: 80vh;
-}
-
 /* App.css */
 
 .container {
-    display: flex;
-    height: 80vh;
-  }
-  
-  .left-column,
-  .right-column {
-    flex: 1;
-  }
-  
-  .left-column {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .right-column {
-    padding: 20px;
-  }
-  
-  .announcement-form,
-  .admin-message-form {
-    margin-bottom: 20px;
-  }
-  
-  .announcement-form {
-    border-radius: 10px;
-    background-color: #F3EEE9;
-    padding: 20px;
-  }
-  
-  .admin-message-form{
-    border-radius: 10px;
-    background-color: #F3EEE9;
-    padding: 20px;
-  }
-  /* Add additional styling for your forms */
-  
+  display: flex;
+  background-color: #ADB9AD;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  margin-top: 70px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.right-column {
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.announcement-form,
+.admin-message-form {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.announcement-form {
+  border-radius: 10px;
+  background-color: #F3EEE9;
+  padding: 20px;
+}
+
+.admin-message-form{
+  border-radius: 10px;
+  background-color: #F3EEE9;
+  padding: 20px;
+}
+/* Add additional styling for your forms */
